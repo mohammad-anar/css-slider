@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.slider {
+    height: 600px;
+    width: 90%;
+    padding: 100px 0;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: rgb(238, 240, 238);
+}
+
+.slider-trac {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    animation: scroll 120s linear infinite;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9))
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    perspective: 50px;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    transition: transform .5s;
+
+}
+
+.image-1 {
+    animation: image1 15s linear infinite;
+
+}
+
+.image-2 {
+    animation: image2 15s linear infinite;
+
+}
+
+.image-3 {
+    animation: image1 15s linear infinite;
+
+}
+
+.image-4 {
+    animation: image2 15s linear infinite;
+
+}
+
+.image-5 {
+    animation: image1 15s linear infinite;
+
+}
+
+.image-6 {
+    animation: image2 15s linear infinite;
+
+}
+
+.image-7 {
+    animation: image1 15s linear infinite;
+
+}
+
+.image-8 {
+    animation: image2 15s linear infinite;
+
+}
+
+.image-9 {
+    animation: image1 15s linear infinite;
+
+}
+
+@keyframes image1 {
+    0% {
+        transform: translateY(10px)
+    }
+
+    25% {
+        transform: translateY(-50px)
+    }
+
+    50% {
+        transform: translateY(10px)
+    }
+
+    75% {
+        transform: translateY(50px)
+    }
+
+    100% {
+        transform: translateY(10px)
+    }
+}
+
+@keyframes image2 {
+    0% {
+        transform: translateY(-50px)
+    }
+
+    25% {
+        transform: translateY(20px)
+    }
+
+    50% {
+        transform: translateY(50px)
+    }
+
+    75% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        transform: translateY(-50px)
+    }
+}
+
+
+img:hover {
+    transform: translateZ(5px);
+}
